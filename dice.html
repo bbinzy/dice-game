@@ -4,21 +4,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
 <body>
-  <!-- TODO: Make this look better, colors, images, something -->
   <p><button id="p1Btn">Player 1</button>
   <button id="p2Btn">Player 2</button></p>
   <p><input id="d1" type="text" value="" readonly="true" />
   <input id="d2" type="text" value="" readonly="true" /></p>
   <div id="winner"></div>
   <p><button id="wwBtn">Who won?</button></p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Two_red_dice_01.svg/2000px-Two_red_dice_01.svg.png" style="width:304px;height:228px;">
   <script>
     $( "#p1Btn" ).click(function() {
-      // TODO: Make this number a random number between 1..6
       $("#d1").val(getRandomInt(1,6))
     });
 
     $( "#p2Btn" ).click(function() {
-      // TODO: Make this number a random number between 1..6
       $("#d2").val(getRandomInt(1,6))
     });
 
